@@ -9,6 +9,10 @@ body {
     color: #1a1a1a;
 }
 
+.hide{
+  display: none;
+}
+
 /* ENCABEZADO */
 
 header {
@@ -69,6 +73,79 @@ h2 {
 
 /* LISTADO DE JUGADORES */
 
+.carrusel {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.jugadores {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.jugadores::-webkit-scrollbar {
+  display: none;
+}
+
+.jugador {
+  flex: 0 0 calc(33.333% - 11px); /* Shows 3 items at a time */
+  min-width: 200px;
+  height: 100%;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.flecha {
+  position: absolute;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.flecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#flecha-izquierda {
+  left: -20px;
+}
+
+#flecha-derecha {
+  right: -20px;
+}
+
+.loader {
+  flex: 0 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #555;
+}
 
 
 .jugador img {
@@ -158,6 +235,9 @@ h2 {
 /* PIE DE PÁGINA */
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -165,42 +245,6 @@ footer {
     background-color: #0756a3;
     color: white;
 }
-
-.carrusel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.jugadores {
-    display: flex;
-    gap: 25px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 10px;
-}
-
-.jugador {
-    flex: 0 0 250px;
-}
-
-.flecha {
-    background-color: #0756a3;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.flecha:hover {
-    background-color: #043d75;
-}
-
-
 
 .logo {
     display: flex;
@@ -787,4 +831,10 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+/* SECCIÓN AGREGAR JUGADOR */
+
+.formulario_jugador {
+    text-align: center;
+    padding: 30px 20px;
 }

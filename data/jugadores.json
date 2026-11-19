@@ -1,188 +1,187 @@
-
-
 [
     {
-        "id": "messi",
+        "imagen_archivo": "undefined",
+        "id": "0",
         "nombre": "Lionel Messi",
         "seleccion": "Argentina",
         "posicion": "Delantero",
-        "dorsal": 10,
+        "dorsal": "10",
         "imagen": "img/messi.jpg"
     },
     {
-        "id": "julian",
+        "id": "1",
         "nombre": "Julián Álvarez",
         "seleccion": "Argentina",
         "posicion": "Delantero",
-        "dorsal": 9,
+        "dorsal": "9",
         "imagen": "img/julian.jpg"
     },
     {
-        "id": "enzo",
+        "id": "2",
         "nombre": "Enzo Fernández",
         "seleccion": "Argentina",
         "posicion": "Mediocampista",
-        "dorsal": 8,
+        "dorsal": "8",
         "imagen": "img/enzo.jpg"
     },
     {
-        "id": "dibu",
+        "id": "3",
         "nombre": "Emiliano Martínez",
         "seleccion": "Argentina",
         "posicion": "Arquero",
-        "dorsal": 23,
+        "dorsal": "23",
         "imagen": "img/dibu.jpg"
     },
     {
-        "id": "cuti",
+        "id": "4",
         "nombre": "Cristian Romero",
         "seleccion": "Argentina",
         "posicion": "Defensor",
-        "dorsal": 13,
+        "dorsal": "13",
         "imagen": "img/cuti.jpg"
     },
     {
-        "id": "macallister",
+        "id": "5",
         "nombre": "Alexis Mac Allister",
         "seleccion": "Argentina",
         "posicion": "Mediocampista",
-        "dorsal": 20,
-        "imagen": "img/macallister.jpg"
+        "dorsal": "20",
+        "imagen": "img/alexis_mac_allister.jpg"
     },
     {
-        "id": "otamendi",
+        "id": "6",
         "nombre": "Nicolás Otamendi",
         "seleccion": "Argentina",
         "posicion": "Defensor",
-        "dorsal": 19,
-        "imagen": "img/otamendi.jpg"
+        "dorsal": "19",
+        "imagen": "img/nicolas_otamendi.jpg"
     },
     {
-        "id": "acuna",
+        "id": "7",
         "nombre": "Marcos Acuña",
         "seleccion": "Argentina",
         "posicion": "Defensor",
-        "dorsal": 8,
-        "imagen": "img/acuna.jpg"
+        "dorsal": "8",
+        "imagen": "img/marcos.jpg"
     },
     {
-        "id": "mbappe",
+        "id": "8",
         "nombre": "Kylian Mbappé",
         "seleccion": "Francia",
         "posicion": "Delantero",
-        "dorsal": 10,
+        "dorsal": "10",
         "imagen": "img/mbappe.jpg"
     },
     {
-        "id": "griezmann",
+        "id": "9",
         "nombre": "Antoine Griezmann",
         "seleccion": "Francia",
         "posicion": "Delantero",
-        "dorsal": 7,
+        "dorsal": "7",
         "imagen": "img/griezmann.jpg"
     },
     {
-        "id": "tchouameni",
+        "id": "10",
         "nombre": "Aurélien Tchouaméni",
         "seleccion": "Francia",
         "posicion": "Mediocampista",
-        "dorsal": 8,
-        "imagen": "img/tchouameni.jpg"
+        "dorsal": "8",
+        "imagen": "img/Tchouameni.jpg"
     },
     {
-        "id": "camavinga",
+        "id": "11",
         "nombre": "Eduardo Camavinga",
         "seleccion": "Francia",
         "posicion": "Mediocampista",
-        "dorsal": 6,
+        "dorsal": "6",
         "imagen": "img/camavinga.jpg"
     },
     {
-        "id": "konate",
+        "id": "12",
         "nombre": "Ibrahima Konaté",
         "seleccion": "Francia",
         "posicion": "Defensor",
-        "dorsal": 15,
+        "dorsal": "15",
         "imagen": "img/konate.jpg"
     },
     {
-        "id": "maignan",
+        "id": "13",
         "nombre": "Mike Maignan",
         "seleccion": "Francia",
         "posicion": "Arquero",
-        "dorsal": 16,
+        "dorsal": "16",
         "imagen": "img/maignan.jpg"
     },
     {
-        "id": "cristiano",
+        "id": "14",
         "nombre": "Cristiano Ronaldo",
         "seleccion": "Portugal",
         "posicion": "Delantero",
-        "dorsal": 7,
+        "dorsal": "7",
         "imagen": "img/cristiano.jpg"
     },
     {
-        "id": "bruno",
+        "id": "15",
         "nombre": "Bruno Fernandes",
         "seleccion": "Portugal",
         "posicion": "Mediocampista",
-        "dorsal": 8,
-        "imagen": "img/bruno.jpg"
+        "dorsal": "8",
+        "imagen": "img/bruno_fernandes.jpg"
     },
     {
-        "id": "ruben",
+        "id": "16",
         "nombre": "Rúben Dias",
         "seleccion": "Portugal",
         "posicion": "Defensor",
-        "dorsal": 4,
-        "imagen": "img/ruben.jpg"
+        "dorsal": "4",
+        "imagen": "img/ruben_dias.jpg"
     },
     {
-        "id": "diogo",
+        "id": "17",
         "nombre": "Diogo Costa",
         "seleccion": "Portugal",
         "posicion": "Arquero",
-        "dorsal": 22,
-        "imagen": "img/diogo.jpg"
+        "dorsal": "22",
+        "imagen": "img/diogo_costa.jpg"
     },
     {
-        "id": "neymar",
+        "id": "18",
         "nombre": "Neymar Jr",
         "seleccion": "Brasil",
         "posicion": "Delantero",
-        "dorsal": 10,
+        "dorsal": "10",
         "imagen": "img/neymar.jpg"
     },
     {
-        "id": "vinicius",
+        "id": "19",
         "nombre": "Vinícius Júnior",
         "seleccion": "Brasil",
         "posicion": "Delantero",
-        "dorsal": 7,
-        "imagen": "img/vinicius.jpg"
+        "dorsal": "7",
+        "imagen": "img/vinicius junior.jpg"
     },
     {
-        "id": "casemiro",
+        "id": "20",
         "nombre": "Casemiro",
         "seleccion": "Brasil",
         "posicion": "Mediocampista",
-        "dorsal": 5,
+        "dorsal": "5",
         "imagen": "img/casemiro.jpg"
     },
     {
-        "id": "marquinhos",
+        "id": "21",
         "nombre": "Marquinhos",
         "seleccion": "Brasil",
         "posicion": "Defensor",
-        "dorsal": 4,
+        "dorsal": "4",
         "imagen": "img/marquinhos.jpg"
     },
     {
-        "id": "alisson",
+        "id": "22",
         "nombre": "Alisson Becker",
         "seleccion": "Brasil",
         "posicion": "Arquero",
-        "dorsal": 1,
-        "imagen": "img/alisson.jpg"
+        "dorsal": "1",
+        "imagen": "img/alisson_becker.jpg"
     }
 ]

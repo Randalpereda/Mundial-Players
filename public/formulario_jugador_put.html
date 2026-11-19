@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+        content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>Creacion Jugador - Mundial Players</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body data-pagina="formulario_jugador">
+    <div id="encabezado"></div>
+
+    <main>
+
+    <section class="detalle" id="detalle-jugador"
+                aria-live="polite">
+
+        <div class="detalle-imagen">
+        <img id="visualizacion_imagen">
+        </div>
+
+        <div class="detalle-info">
+        <!-- Action to the same route as in app.post() method -->
+        <form id="formulario_jugador" class="formulario_jugador">
+
+            <input type="hidden" name="id" id="id">
+
+            nombre: <input type="text" name="nombre" id="nombre">
+            <br><br>
+
+            seleccion:
+            
+            <select id="seleccion" name="seleccion">
+            <!-- Acá aparecerán las selecciones -->
+            </select>
+            
+            <br><br>
+
+            posicion:         
+            <select name="posicion" id="posicion">
+                <option value="Arquero">Arquero</option>
+                <option value="Defensor">Defensor</option>
+                <option value="Mediocampista">Mediocampista</option>
+                <option value="Delantero">Delantero</option>
+            </select>
+            <br><br>
+
+            dorsal: <input type="number" name="dorsal" id="dorsal">
+            <br><br>
+
+            <input type="file" name="imagen" id="imagen" accept="image/png, image/jpeg" />
+            <br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </section>
+    
+    <div id="mensaje_respuesta"></div>
+
+    </main>
+
+    <div id="pie-pagina"></div>
+
+    <script src="/js/componentes.js"></script>
+    <script src="/js/formulario_jugador_put.js"></script>
+
+</body>
+</html>

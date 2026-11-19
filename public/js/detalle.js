@@ -2,39 +2,42 @@
 const contenedor = document.querySelector("#detalle-jugador");
 
 const parametros = new URLSearchParams(window.location.search);
-const idJugador = parametros.get("jugador");
+const idJugador = parametros.get("id");
 
-let jugadorEncontrado = null;
+async function cargarDatosJugador()
+{
+    const response_jugador = await fetch("/api/jugadores/"+idJugador);
+    const jugador = await response_jugador.json();
 
-equipos.forEach(function(equipo) {
-    equipo.jugadores.forEach(function(jugador) {
-        if (jugador.id === idJugador) {
-            jugadorEncontrado = jugador;
-        }
-    });
-});
+    if (response_jugador.status != 404) {
 
-if (jugadorEncontrado) {
+        contenedor.innerHTML = `
+            <div class="detalle-imagen">
+                <img src="${jugador.imagen}" 
+                    alt="${jugador.nombre}">
+            </div>
 
-    contenedor.innerHTML = `
-        <div class="detalle-imagen">
-            <img src="${jugadorEncontrado.imagen}" 
-                 alt="${jugadorEncontrado.nombre}">
-        </div>
+            <div class="detalle-info">
+                <h2>${jugador.nombre}</h2>
 
-        <div class="detalle-info">
-            <h2>${jugadorEncontrado.nombre}</h2>
+                <p><strong>Selección:</strong> ${jugador.seleccion}</p>
 
-            <p><strong>Selección:</strong> ${jugadorEncontrado.seleccion}</p>
+                <p><strong>Posición:</strong> ${jugador.posicion}</p>
 
-            <p><strong>Posición:</strong> ${jugadorEncontrado.posicion}</p>
+                <p><strong>Dorsal:</strong> ${jugador.dorsal}</p>
 
-            <p><strong>Dorsal:</strong> ${jugadorEncontrado.dorsal}</p>
+                <a href="jugadores.html">Volver a jugadores</a>
 
-            <a href="jugadores.html">Volver a jugadores</a>
-        </div>
-    `;
+                <a href="formulario_jugador_put.html?id=${jugador.id}">
+                    Editar jugador
+                </a>
+            </div>
+        
+        `;
 
-} else {
-    contenedor.textContent = "No se encontró el jugador.";
+    } else {
+        contenedor.textContent = "No se encontró el jugador.";
+    }
 }
+
+cargarDatosJugador();

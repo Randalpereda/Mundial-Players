@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+        content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>Creacion Jugador - Mundial Players</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body data-pagina="formulario_jugador">
+    <div id="encabezado"></div>
+
+    <main>
+    <!-- Action to the same route as in app.post() method -->
+    <form id="formulario_jugador" class="formulario_jugador">
+
+        nombre: <input type="text" id="nombre" name="nombre">
+        <br><br>
+
+        seleccion:
+        
+        <select id="seleccion" name="seleccion">
+        <!-- Acá aparecerán las selecciones -->
+        </select>
+        
+        <br><br>
+
+        posicion:         
+        <select id="posicion" name="posicion">
+            <option value="Arquero">Arquero</option>
+            <option value="Defensor">Defensor</option>
+            <option value="Mediocampista">Mediocampista</option>
+            <option value="Delantero">Delantero</option>
+        </select>
+        <br><br>
+
+        dorsal: <input type="number" id="dorsal" name="dorsal">
+        <br><br>
+
+        <input type="file" id="imagen" name="imagen" accept="image/png, image/jpeg" />
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="mensaje_respuesta"></div>
+
+    </main>
+
+    <div id="pie-pagina"></div>
+
+    <script src="/js/componentes.js"></script>
+    <script src="/js/formulario_jugador.js"></script>
+
+</body>
+</html>

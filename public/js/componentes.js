@@ -26,7 +26,12 @@ encabezado.innerHTML = `
             <a href="alineacion.html"
    ${pagina === "alineacion" ? 'class="seleccionado" aria-current="page"' : ""}>
     Armá tu 11
-</a>
+            </a>
+
+            <a href="formulario_jugador.html"
+               ${pagina === "formulario_jugador" ? 'class="seleccionado" aria-current="page"' : ""}>
+                Agregar Jugador
+            </a>
         </nav>
     </header>
 `;
